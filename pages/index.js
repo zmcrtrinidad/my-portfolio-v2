@@ -145,23 +145,23 @@ return (
     </div>
 
     <div className="grid w-full grid-cols-1 gap-8 pt-12 mx-auto sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
-      <a href="/" className="mx-auto transition-all transform hover:scale-105 md:mx-0">
+      <Link href="/" className="mx-auto transition-all transform hover:scale-105 md:mx-0">
         <Image src={NEUMeet} height={620} className="shadow" alt='neumeet' />
         <h2>NEUMEET</h2>
 
-      </a>
-      <a href="/" className="mx-auto transition-all transform hover:scale-105 md:mx-0">
+      </Link>
+      <Link href="/" className="mx-auto transition-all transform hover:scale-105 md:mx-0">
         <Image src={Pockethub} className="shadow" alt='neumeet' />
 
-      </a>
-      <a href="/" className="mx-auto transition-all transform hover:scale-105 md:mx-0">
+      </Link>
+      <Link href="/" className="mx-auto transition-all transform hover:scale-105 md:mx-0">
         <Image src={Trial} className="shadow" alt='neumeet' />
 
-      </a>
-      {/* <a href="/" className="mx-auto transition-all transform hover:scale-105 md:mx-0">
+      </Link>
+      {/* <Link href="/" className="mx-auto transition-all transform hover:scale-105 md:mx-0">
         <Image src={NEUMeet} className="shadow" alt='neumeet' />
 
-      </a> */}
+      </Link> */}
     </div>
   </section>
   <section className="h-full p-5 bg-red-900 lg:py-16 lg:px-32 text-white" id="experience">
@@ -309,9 +309,9 @@ return (
       </div>
     </div>
   </section>
-  <a href="#" className="scroll-top">
+  <Link href="#" className="scroll-top">
     <i className="fa-solid fa-angle-up"></i>
-  </a>
+  </Link>
 </main>
 )
 }
