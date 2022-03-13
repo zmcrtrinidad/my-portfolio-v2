@@ -25,37 +25,37 @@ export default function Sidebar() {
         <div className="h-full space-x-1 navbar nav-menu">
           <ul className="flex flex-col justify-center h-screen overflow-y-auto w-52 lg:w-auto " >
             <li>
-              <a href="#home" >
+              <Link href="#home" >
                 <i className="fa-solid fa-house"></i>
                 <span>Home</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a  href="#about">
+              <Link  href="#about">
               <i className="fa-solid fa-user-astronaut"></i>
                 <span>About</span>
-              </a>
+              </Link>
               
             </li>
             <li>
          
-              <a  href="#works" >
+              <Link  href="#works" >
               <i className="fa-solid fa-book-open"></i>
                 <span>Works</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a  href="#experience">
+              <Link  href="#experience">
               <i className="fa-solid fa-folder-tree"></i>
                 <span>Experience</span>
-              </a>
+              </Link>
               
             </li>
             <li>
              
-              <a  href="#contact">
+              <Link  href="#contact">
               <i className="fa-solid fa-address-card"></i>
-                <span>Contact</span></a>
+                <span>Contact</span></Link>
             </li>
           </ul>
         </div>
