@@ -1,42 +1,68 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import Link from 'next/link'
 import { useRouter } from "next/router";
 
 
 export default function Sidebar() {
-const router = useRouter();
-return (
-<aside>
+  const router = useRouter();
+  useEffect(() => {
+  const btn = document.querySelector("button.mobile-menu-button");
+  const menu = document.querySelector(".mobile-menu");
 
-  <aside class="w-64" aria-label="Sidebar">
-    <div class="overflow-y-auto h-screen flex items-center py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
-    <nav id="navbar" class="navbar nav-menu">
-      <ul className="space-y-2">
-        <li>
-          <Link href="/"><a className={router.pathname=="/" ? "nav-link scrollto active" : " nav-link scrollto" }> <i
-              class="bx bx-home"></i><span>Home</span></a></Link>
-        </li>
-        <li>
-          <Link href="/about"><a className={router.pathname=="/about" ? "nav-link scrollto active"
-            : " nav-link scrollto" }><i class="bx bx-user"></i><span>About</span></a></Link>
-        </li>
-        <li>
-          <Link href="/projects"><a className={router.pathname=="/projects" ? "nav-link scrollto active"
-            : " nav-link scrollto" }><i class="bx bx-book-content"></i> <span>Works</span></a></Link>
-        </li>
-        <li>
-          <Link href="/contact"><a className={router.pathname=="/contact" ? "nav-link scrollto active"
-            : " nav-link scrollto" }><i class="bx bx-envelope"></i> <span>Contact</span></a></Link>
-        </li>
-      </ul>
-    </nav>
-    </div>
-  </aside>
+  btn.addEventListener("click", () => {
+  menu.classList.toggle("hidden");
+  });
+  }, [])
+  return (
 
-  {/* <i class="bx bx-list-ul mobile-nav-toggle d-xl-none" style={{color:'white'}}></i>
-  <header id="header" class="d-flex flex-column justify-content-center">
-    
-  </header> */}
-</aside>
-)
+  <aside className="fixed z-10 overflow-hidden ">
+       <div className="fixed flex justify-end overflow-hidden lg:hidden">
+        <button className="outline-none mobile-nav-toggle mobile-menu-button">
+        <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+      <div className="hidden w-auto h-screen p-3 bg-gray-200 lg:bg-transparent lg:items-center lg:flex lg:justify-start lg:p-5 mobile-menu"    >
+        <div className="h-full space-x-1 navbar nav-menu">
+          <ul className="flex flex-col justify-center h-screen overflow-y-auto w-52 lg:w-auto " >
+            <li>
+              <a href="#home" >
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a  href="#about">
+              <i class="fa-solid fa-user-astronaut"></i>
+                <span>About</span>
+              </a>
+              
+            </li>
+            <li>
+         
+              <a  href="#works" >
+              <i class="fa-solid fa-book-open"></i>
+                <span>Works</span>
+              </a>
+            </li>
+            <li>
+              <a  href="#experience">
+              <i class="fa-solid fa-folder-tree"></i>
+                <span>Experience</span>
+              </a>
+              
+            </li>
+            <li>
+             
+              <a  href="#contact">
+              <i class="fa-solid fa-address-card"></i>
+                <span>Contact</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+     
+    </aside>
+
+   
+  )
 }

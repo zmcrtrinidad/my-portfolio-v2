@@ -4,7 +4,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'berkshire-swash': ['"Berkshire Swash"', 'cursive'],
+        'bigshot-one': ['"Bigshot One"', 'cursive'],
+      },
+   
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }

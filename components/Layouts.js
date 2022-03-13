@@ -4,10 +4,12 @@ import Footer from './Footer'
 
 export default function Layouts({children}) {
   return (
-    <div>
-        <Sidebar/>
-        {children}
-        {/* <Footer/> */}
-    </div>
+    
+    <div >
+  
+      <Sidebar/>
+  
+   {children}
+  </div>
   )
 }

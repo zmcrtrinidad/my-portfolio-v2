@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 html,
 body {
+  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -19,7 +23,6 @@ a {
 }
 .nav-menu {
   padding: 0;
-  display: block;
 }
 .nav-menu * {
   margin: 0;
@@ -27,7 +30,7 @@ a {
   list-style: none;
 }
 .nav-menu > ul > li {
-  position: relative;
+ 
   white-space: nowrap;
 }
 .nav-menu a, .nav-menu a:focus {
@@ -76,9 +79,6 @@ a {
   display: block;
 }
 
-/**
-* Mobile Navigation 
-*/
 .mobile-nav-toggle {
   position: fixed;
   right: 10px;
@@ -97,14 +97,63 @@ a {
 .mobile-nav-toggle i {
   color: #45505b;
 }
-
-.mobile-nav-active {
-  overflow: hidden;
-}
-.mobile-nav-active #header {
-  left: 0;
-}
-.mobile-nav-active .mobile-nav-toggle {
+.scroll-top {
+  width: 45px;
+  height: 45px;
+  background: #ED213A;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
   color: #fff;
-  background-color: #a83939;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9;
+  cursor: pointer;
+  transition: all 0.3s ease-out 0s;
 }
+
+.scroll-top:hover {
+  background: rgba(0, 0, 0, 1);
+  color: #fff;
+}
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #ffff;
+}
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #a33030;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+.section-title p {
+  margin-bottom: 0;
+}
+
+
+
