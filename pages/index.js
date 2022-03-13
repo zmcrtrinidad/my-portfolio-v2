@@ -75,10 +75,10 @@ return (
 
           <h1 className="md:text-4xl md:px-3 text-2xl font-berkshire-swash "> Zinia Ma. Consuelo Trinidad </h1>
           <h5 className='text-3xl py-7 px-4 k'>I'm a <span className='text-black font-bold font-berkshire-swash'>Web Developer</span> </h5>
-          <a href="" className='px-5 '><i className="fa-brands fa-facebook fa-2xl"></i></a>
-          <a href="" className='px-5 '><i className="fa-brands fa-twitter fa-2xl"></i></a>
-          <a href="" className='px-5 '><i className="fa-brands fa-github fa-2xl"></i></a>
-          <a href="" className='px-5 '><i className="fa-brands fa-linkedin fa-2xl"></i></a>
+          <a href="https://www.facebook.com/zmcrtrinidad/" className='px-5 '><i className="fa-brands fa-facebook fa-2xl"></i></a>
+          <a href="https://twitter.com/thb_mnyngi_zn" className='px-5 '><i className="fa-brands fa-twitter fa-2xl"></i></a>
+          <a href="https://github.com/zmcrtrinidad" className='px-5 '><i className="fa-brands fa-github fa-2xl"></i></a>
+          <a href="https://www.linkedin.com/in/zinia-trinidad/" className='px-5 '><i className="fa-brands fa-linkedin fa-2xl"></i></a>
         </div>
 
         <div className='backdrop-blur-md bg-white/30 rounded-full '>
