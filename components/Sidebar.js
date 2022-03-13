@@ -18,7 +18,7 @@ export default function Sidebar() {
   <aside className="fixed z-10 overflow-hidden ">
        <div className="fixed flex justify-end overflow-hidden lg:hidden">
         <button className="outline-none mobile-nav-toggle mobile-menu-button">
-        <i class="fa-solid fa-bars-staggered"></i>
+        <i className="fa-solid fa-bars-staggered"></i>
         </button>
       </div>
       <div className="hidden w-auto h-screen p-3 bg-gray-200 lg:bg-transparent lg:items-center lg:flex lg:justify-start lg:p-5 mobile-menu"    >
@@ -26,13 +26,13 @@ export default function Sidebar() {
           <ul className="flex flex-col justify-center h-screen overflow-y-auto w-52 lg:w-auto " >
             <li>
               <a href="#home" >
-                <i class="fa-solid fa-house"></i>
+                <i className="fa-solid fa-house"></i>
                 <span>Home</span>
               </a>
             </li>
             <li>
               <a  href="#about">
-              <i class="fa-solid fa-user-astronaut"></i>
+              <i className="fa-solid fa-user-astronaut"></i>
                 <span>About</span>
               </a>
               
@@ -40,13 +40,13 @@ export default function Sidebar() {
             <li>
          
               <a  href="#works" >
-              <i class="fa-solid fa-book-open"></i>
+              <i className="fa-solid fa-book-open"></i>
                 <span>Works</span>
               </a>
             </li>
             <li>
               <a  href="#experience">
-              <i class="fa-solid fa-folder-tree"></i>
+              <i className="fa-solid fa-folder-tree"></i>
                 <span>Experience</span>
               </a>
               
@@ -54,7 +54,7 @@ export default function Sidebar() {
             <li>
              
               <a  href="#contact">
-              <i class="fa-solid fa-address-card"></i>
+              <i className="fa-solid fa-address-card"></i>
                 <span>Contact</span></a>
             </li>
           </ul>
