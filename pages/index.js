@@ -67,14 +67,14 @@ export default function Home() {
   }, [])
   return (
     <main className=" scroll-smooth">
-      <section className="h-full p-5 lg:py-16 lg:px-32 text-white bg-red-900" id="home">
+      <section className="h-full p-5 text-white bg-red-900 lg:py-16 lg:px-32" id="home">
         <Particles id="tsparticles" params={Parts} />
-        <div className="flex h-full items-center justify-center">
-          <div className="flex flex-col-reverse md:flex-row items-center w-11/12  py-20">
+        <div className="flex items-center justify-center h-full">
+          <div className="flex flex-col-reverse items-center w-11/12 py-20 md:flex-row">
             <div className="lg:w-6/12 ">
 
-              <h1 className="md:text-4xl md:px-3 text-2xl font-berkshire-swash "> Zinia Ma. Consuelo Trinidad </h1>
-              <h5 className='text-3xl py-7 px-4 k'>I&apos;m a <span className='text-black font-bold font-berkshire-swash'>Web
+              <h1 className="text-2xl md:text-4xl md:px-3 font-berkshire-swash "> Zinia Ma. Consuelo Trinidad </h1>
+              <h5 className='px-4 text-3xl py-7 k'>I&apos;m a <span className='font-bold text-black font-berkshire-swash'>Web
                   Developer</span> </h5>
               <a href="https://www.facebook.com/zmcrtrinidad/" className='px-5 '><i
                   className="fa-brands fa-facebook fa-2xl"></i></a>
@@ -85,7 +85,7 @@ export default function Home() {
                   className="fa-brands fa-linkedin fa-2xl"></i></a>
             </div>
 
-            <div className='backdrop-blur-md bg-white/30 rounded-full '>
+            <div className='rounded-full backdrop-blur-md bg-white/30 '>
               <Image src={Me} />
             </div>
 
@@ -93,56 +93,56 @@ export default function Home() {
         </div>
 
       </section>
-      <section className="h-screen flex flex-col " id="about">
-        <div className="bg-black h-full text-white  lg:py-16 lg:px-32 p-5  ">
+      <section className="flex flex-col h-full " id="about">
+        <div className="p-5 text-white bg-black lg:py-16 lg:px-32">
           <div className="section-title">
             <h2 className="font-bigshot-one">About Me</h2>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-10 my-12 justify-items-center text-white">
-            <div className="p-8">
+          <div className="grid grid-cols-2 my-5 text-white sm:grid-cols-3 lg:grid-cols-10 justify-items-center">
+            <div className="px-8 py-5">
               <Image src={HTML} width={50} height={50} />
             </div>
 
-            <div className="p-8">
+            <div className="px-8 py-5">
               <Image src={CSS} width={50} height={50} />
 
             </div>
 
-            <div className="p-8">
+            <div className="px-8 py-5">
               <Image src={Python} width={50} height={50} />
             </div>
 
-            <div className="p-8">
+            <div className="px-8 py-5">
               <Image src={PHP} width={50} height={50} />
             </div>
-            <div className="p-8">
+            <div className="px-8 py-5">
               <Image src={ReactJs} width={50} height={50} />
             </div>
 
-            <div className="p-8">
+            <div className="px-8 py-5">
               <Image src={django} width={50} height={50} />
             </div>
-            <div className="p-8">
+            <div className="px-8 py-5">
               <Image src={JS} width={50} height={50} />
             </div>
-            <div className="p-8">
+            <div className="px-8 py-5">
               <Image src={Bootstrap} width={50} height={50} />
             </div>
-            <div className="p-8">
+            <div className="px-8 py-5">
               <Image src={Tailwind} width={50} height={50} />
             </div>
-            <div className="p-8">
+            <div className="px-8 py-5">
               <Image src={MaterialUi} width={50} height={50} />
             </div>
           </div>
 
         </div>
-        <div className="bg-red-900 text-white h-full flex items-center justify-center lg:py-16 lg:px-32">
-          <h1 className="text-2xl">I am a 4th year college IT Student from New era University. Passionate about front-end
+        <div className="flex items-center justify-center px-5 text-white bg-red-900 lg:py-16 lg:px-32">
+          <h1 className="p-6 text-2xl">I am a 4th year college IT Student from New era University. Passionate about front-end
             development and building web applications that are clean, easy to use and intuitive.</h1>
         </div>
       </section>
-      <section className="h-full p-5 bg-black lg:py-16 lg:px-32 text-white" id="works">
+      <section className="h-full p-5 text-white bg-black lg:py-16 lg:px-32" id="works">
 
         <div className="section-title">
           <h2 className="font-bigshot-one">Works</h2>
@@ -168,7 +168,7 @@ export default function Home() {
           </div> */}
         </div>
       </section>
-      <section className="h-full p-5 bg-red-900 lg:py-16 lg:px-32 text-white" id="experience">
+      <section className="h-full p-5 text-white bg-red-900 lg:py-16 lg:px-32" id="experience">
         <div className="section-title">
           <h2 className="font-bigshot-one">My Work Experience</h2>
         </div>
@@ -221,52 +221,28 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="h-full p-5 lg:py-16 lg:px-32 bg-black text-white" id="contact">
+      <section className="h-full p-5 text-white bg-black lg:py-16 lg:px-32" id="contact">
         <div className="section-title">
           <h2 className="font-bigshot-one">Contact</h2>
         </div>
-        <div className="min-h-screen  py-6 flex flex-col justify-center sm:py-12">
+        <div className="flex flex-col justify-center min-h-screen py-6 sm:py-12">
           <div className="relative py-3 ">
             <div
-              className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20 bg-clip-padding bg-opacity-60 border border-gray-200">
+              className="relative px-4 py-10 bg-white border border-gray-200 shadow-lg sm:rounded-3xl sm:p-20 bg-clip-padding bg-opacity-60">
 
               <div className="grid grid-cols-1 gap-6 px-5">
                 <label className="block">
-                  <span className="text-white font-bold">Full name</span>
-                  <input type="text" className="
-                        mt-1
-                        block
-                        w-full
-                        rounded-md
-                        bg-gray-100
-                        border-transparent
-                        focus:border-gray-500 focus:bg-white focus:ring-0
-                      " placeholder="" />
+                  <span className="font-bold text-white">Full name</span>
+                  <input type="text" className="block w-full mt-1 bg-gray-100 border-transparent rounded-md focus:border-gray-500 focus:bg-white focus:ring-0" placeholder="" />
                 </label>
                 <label className="block">
-                  <span className="text-white font-bold">Email address</span>
-                  <input type="email" className="
-                        mt-1
-                        block
-                        w-full
-                        rounded-md
-                        bg-gray-100
-                        border-transparent
-                        focus:border-gray-500 focus:bg-white focus:ring-0
-                      " placeholder="john@example.com" />
+                  <span className="font-bold text-white">Email address</span>
+                  <input type="email" className="block w-full mt-1 bg-gray-100 border-transparent rounded-md focus:border-gray-500 focus:bg-white focus:ring-0" placeholder="john@example.com" />
                 </label>
 
                 <label className="block">
-                  <span className="text-white font-bold">Additional details</span>
-                  <textarea className="
-                        mt-1
-                        block
-                        w-full
-                        rounded-md
-                        bg-gray-100
-                        border-transparent
-                        focus:border-gray-500 focus:bg-white focus:ring-0
-                      " rows="3"></textarea>
+                  <span className="font-bold text-white">Additional details</span>
+                  <textarea className="block w-full mt-1 bg-gray-100 border-transparent rounded-md focus:border-gray-500 focus:bg-white focus:ring-0" rows="3"></textarea>
                 </label>
               </div>
               <div className="flex flex-col pt-16 lg:flex-row">
