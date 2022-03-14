@@ -173,9 +173,9 @@ export default function Home() {
           <h2 className="font-bigshot-one">My Work Experience</h2>
         </div>
 
-        <div className="relative flex flex-col w-full mx-auto mt-12 lg:w-2/3">
+        <div className="relative flex flex-col w-full mx-auto lg:w-2/3">
           <span className="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
-          <div className="flex flex-col mt-8 text-center md:flex-row md:text-left">
+          <div className="flex flex-col text-center md:flex-row md:text-left">
             <div className="md:w-2/5">
               <div className="flex justify-center md:justify-start">
                 <span className="shrink-0">
