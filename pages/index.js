@@ -99,39 +99,39 @@ export default function Home() {
             <h2 className="font-bigshot-one">About Me</h2>
           </div>
           <div className="grid grid-cols-2 my-5 text-white sm:grid-cols-3 lg:grid-cols-10 justify-items-center">
-            <div className="px-8 py-5">
+            <div className="px-5 py-5 rounded-full backdrop-blur-sm bg-white/30">
               <Image src={HTML} width={50} height={50} />
             </div>
 
-            <div className="px-8 py-5">
+            <div className="px-5 py-5 rounded-full backdrop-blur-sm bg-white/30">
               <Image src={CSS} width={50} height={50} />
 
             </div>
 
-            <div className="px-8 py-5">
+            <div className="px-5 py-5 rounded-full backdrop-blur-sm bg-white/30">
               <Image src={Python} width={50} height={50} />
             </div>
 
-            <div className="px-8 py-5">
+            <div className="px-5 py-5 rounded-full backdrop-blur-sm bg-white/30">
               <Image src={PHP} width={50} height={50} />
             </div>
-            <div className="px-8 py-5">
+            <div className="px-5 py-5 rounded-full backdrop-blur-sm bg-white/30">
               <Image src={ReactJs} width={50} height={50} />
             </div>
 
-            <div className="px-8 py-5">
+            <div className="px-5 py-5 rounded-full backdrop-blur-sm bg-white/30">
               <Image src={django} width={50} height={50} />
             </div>
-            <div className="px-8 py-5">
+            <div className="px-5 py-5 rounded-full backdrop-blur-sm bg-white/30">
               <Image src={JS} width={50} height={50} />
             </div>
-            <div className="px-8 py-5">
+            <div className="px-5 py-5 rounded-full backdrop-blur-sm bg-white/30">
               <Image src={Bootstrap} width={50} height={50} />
             </div>
-            <div className="px-8 py-5">
+            <div className="px-5 py-5 rounded-full backdrop-blur-sm bg-white/30">
               <Image src={Tailwind} width={50} height={50} />
             </div>
-            <div className="px-8 py-5">
+            <div className="px-5 py-5 rounded-full backdrop-blur-sm bg-white/30">
               <Image src={MaterialUi} width={50} height={50} />
             </div>
           </div>
