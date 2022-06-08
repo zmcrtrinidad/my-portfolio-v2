@@ -91,8 +91,9 @@ export default function Home() {
 
           </div>
         </div>
+
       </section>
-      <section className="flex flex-col h-screen " id="about">
+      <section className="flex flex-col h-full " id="about">
         <div className="p-5 text-white bg-black lg:py-16 lg:px-32">
           <div className="section-title">
             <h2 className="font-bigshot-one">About Me</h2>
